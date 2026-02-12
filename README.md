@@ -39,29 +39,35 @@ waf-firewall/
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
+
 bash:-
 git clone https://github.com/sibubehera097-byte/waf-firewall.git
 cd waf-firewall
 
 2️⃣ Create virtual environment
+
 base:-
 python3 -m venv venv
 source venv/bin/activate
 
 3️⃣ Install dependencies
+
 base:-
 pip install flask
 
 4️⃣ Run the application
+
 base:-
 python app.py
 
 Open your browser:
+
 code:-
 http://127.0.0.1:5000
 🧪 Testing the Firewall
 
 Try this SQL injection payload in the login form:
+
 code:-
 admin' OR 1=1 --
 
@@ -69,10 +75,11 @@ Expected response:
 
 🚫 Attack Blocked by WAF
 📊 View Attack Logs
+
 base:-
 sqlite3 database.db
 SELECT * FROM logs;
 
 This shows attacker IPs, payloads, and timestamps.
 
-                                                                                          "THANK💗YOU"
+                                                     "THANK💗YOU"
